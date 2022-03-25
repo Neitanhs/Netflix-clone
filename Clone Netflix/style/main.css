@@ -1,0 +1,131 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;	
+  }
+
+
+*{ margin:0;
+    padding:0;
+    box-sizing:border-box;
+   }
+
+body{
+    background: var(--preta);
+    font-family: 'Open sans', Courier, monospace;
+    color:#fff
+}
+
+header .container{
+    display:flex;
+    align-items: center; 
+    justify-content: left;    
+}
+   
+
+/* NAVBAR ESQUERDA */
+
+header .logo{
+    color: var(--vermelho); 
+    font-family: "Bebas Neue";
+    font-size:30px;    
+    margin-left:35px;
+    padding-right: 32px ; 
+    margin-top: 10px;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+
+}
+
+header nav a{
+    text-decoration:none;  
+    color: rgb(255, 255, 255);
+    margin-right:10px;
+    transition: 0.3s ease all;
+    font-size: 15px;
+    margin-top: 10px;
+    
+}
+
+header nav a:hover{
+    color:rgb(182, 182, 182)
+}
+
+/* Filme principal */
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)100%), url("../img/capa-vikings.jpg");
+
+    height: 700px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*mudam de acordo com o flex-direction*/
+    align-items: flex-start; /*mudam de acordo com o flex-direction*/
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px; 
+    font-family: 'Open sans', 'Gill Sans MT';
+    margin-left: 20px;     
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-left: 12px;
+}
+
+.botao1,.botao {
+    background-color: rgba(151, 151, 151, 0.5);
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    margin-right: 6px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: .3s ease all;
+    font-weight: bold;
+}
+
+.botao:hover{
+    background-color: rgba(117, 117, 117, 0.3);   
+    
+}
+.botao1:hover{
+    background-color: rgba(255, 255, 255, 0.6)   
+} 
+
+.botao1{
+    background-color: white;
+    color:black;
+    margin-left: 40px;
+}
+
+
+.botao i,.botao1 i{
+    margin-right:7px;
+    font-size: 20px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 40%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
