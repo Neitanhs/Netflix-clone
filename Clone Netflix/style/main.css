@@ -1,6 +1,6 @@
 :root{
     --vermelho:#E50914;
-    --preta:#141414;	
+    --preta:#0f0f0f;	
   }
 
 
@@ -18,22 +18,21 @@ body{
 header .container{
     display:flex;
     align-items: center; 
-    justify-content: left;    
+    justify-content: left;
+    padding: 10px
+    
 }
    
 
 /* NAVBAR ESQUERDA */
 
-header .logo{
-    color: var(--vermelho); 
-    font-family: "Bebas Neue";
-    font-size:30px;    
+header .container img{
+    width: 8em;   
+    align-items: center;
+    justify-content: center;     
     margin-left:35px;
     padding-right: 32px ; 
-    margin-top: 10px;
-    letter-spacing: 4px;
-    margin-bottom: 5px;
-
+   
 }
 
 header nav a{
@@ -42,7 +41,7 @@ header nav a{
     margin-right:10px;
     transition: 0.3s ease all;
     font-size: 15px;
-    margin-top: 10px;
+   
     
 }
 
@@ -52,10 +51,10 @@ header nav a:hover{
 
 /* Filme principal */
 .filme-principal{
-    font-size: 16px;
+    font-size: 20px;
     background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)100%), url("../img/capa-vikings.jpg");
 
-    height: 700px;
+    height: 850px;
     background-size: cover;
 
     display: flex;
@@ -71,9 +70,10 @@ header nav a:hover{
     margin-left: 20px;     
 }
 
-.filme-principal .titulo{
-    margin-top: 15%;
-    font-size: 50px;
+.filme-principal img{
+    margin-top: 0;
+    width: 80%;
+    
     font-family: 'Trebuchet MS', Arial, sans-serif;
     margin-left: 12px;
 }
@@ -82,9 +82,9 @@ header nav a:hover{
     background-color: rgba(151, 151, 151, 0.5);
     border: none;
     color: white;
-    padding: 10px 30px;
+    padding: 15px 40px;
     margin-right: 6px;
-    font-size: 20px;
+    font-size: 25px;
     border-radius: 5px;
     cursor:pointer;
     transition: .3s ease all;
@@ -123,9 +123,10 @@ header nav a:hover{
     height: 100%;
     width: 100%;
     display: block;
+    border-radius: 5px;
 }
 
 
 .carrosel-filmes{
-    margin-top: 5px;
+    margin-top: -20px;
 }
